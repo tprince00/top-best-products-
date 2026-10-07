@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TOP BEST PRODUCTS — quality products, better living.">
+<title>TOP BEST PRODUCTS</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#">
+      <img src="assets/logo-90x90.png" alt="TOP BEST PRODUCTS logo">
+      <span>TOP BEST <small>PRODUCTS</small></span>
+    </a>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="cart-btn" id="cartBtn">Cart <b id="cartCount">0</b></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <img src="assets/banner-1125x432.jpg" alt="TOP BEST PRODUCTS — Quality products, better living">
+  </section>
+
+  <section class="trust container">
+    <div><strong>✓</strong><span>Secure checkout</span></div>
+    <div><strong>↯</strong><span>Reliable delivery</span></div>
+    <div><strong>★</strong><span>Carefully selected</span></div>
+    <div><strong>♡</strong><span>Customer support</span></div>
+  </section>
+
+  <section class="container products-section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">SHOP THE COLLECTION</p>
+        <h1>Featured Products</h1>
+      </div>
+      <select id="category">
+        <option value="all">All products</option>
+        <option value="anime">Anime & Japan</option>
+        <option value="tech">Tech & Accessories</option>
+        <option value="home">Home & Lifestyle</option>
+      </select>
+    </div>
+    <div class="search-wrap" id="searchWrap">
+      <input id="search" type="search" placeholder="Search products…">
+    </div>
+    <div class="grid" id="productGrid"></div>
+  </section>
+
+  <section class="about container">
+    <div>
+      <p class="eyebrow">TOP BEST PRODUCTS</p>
+      <h2>Find something worth adding to your collection.</h2>
+    </div>
+    <p>We’re building a carefully selected range of useful, stylish and fun products — from anime-inspired finds to everyday tech and lifestyle accessories.</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>TOP BEST PRODUCTS</strong><p>Quality products • Better living</p></div>
+    <div><a href="contact.html">Contact</a><a href="shipping.html">Shipping</a><a href="returns.html">Returns</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
+  </div>
+  <div class="copyright">© 2026 TOP BEST PRODUCTS. All rights reserved.</div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-head"><h2>Your Cart</h2><button id="closeCart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-foot">
+    <div class="total"><span>Total</span><strong id="cartTotal">£0.00</strong></div>
+    <button class="checkout" id="checkoutBtn">Proceed to checkout</button>
+    <p class="checkout-note">Replace the checkout links in <code>script.js</code> with your Stripe Payment Links before launch.</p>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
